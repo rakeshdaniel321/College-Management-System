@@ -19,8 +19,8 @@ public class CollegeController {
         System.out.println("\n--- After Update ---");
         service.viewAll();
 
-     // service.removeRecord(3);
-        //System.out.println("\n--- After Remove ---");
-        //service.viewAll();
+     service.removeRecord(1);
+        System.out.println("\n--- After Remove ---");
+        service.viewAll();
     }
 }

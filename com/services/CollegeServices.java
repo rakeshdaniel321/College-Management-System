@@ -57,10 +57,11 @@ public class CollegeServices
     }
 
     // Remove
-  //  public boolean removeRecord(int id) {
-    //    CollegeEntity existing = findById(id);
-      //  return existing != null && list.remove(existing);
-   // }
+  public ArrayList<CollegeEntity> removeRecord(int id) {
+		boolean  isRemoved=list.removeIf(data -> data.getId()==id);
+System.out.println(isRemoved ? "record Remove successful"+"->"+id : "remove failure"+"->"+id+"not found");
+return list;
+     }
 
 
 }
